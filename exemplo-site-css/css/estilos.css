@@ -1,0 +1,117 @@
+/* REGRAS CSS */
+/* Alterando o Box Model para TODOS os elementos da página */
+*, *::after, *::before {box-sizing: border-box;}
+
+/* Pseudo-elementos ::after e ::before
+Permite adicionar conteúdo dentro do conteúdo(depois/antes */
+H2::after {content: ":)";}
+
+
+/* SELETOR TAG */
+body{
+    background-image: url(../imagens/tarde.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+/* SELECTOR IDENTIFICADOR */
+
+#container{
+   background-color: rgba(255, 255, 255, 0.479);
+
+   /* Quando combinamos largura e margem automatica, o efeito prático éa centralização da caixa (div) */
+   width: 70%;
+   margin: auto;
+
+  /* Espaçamento/enchimento interno */
+   padding: 15px; 
+
+border-radius: 10px;
+box-shadow: red 50px 50px 50px;
+
+
+
+
+
+
+}
+
+
+/* seletor Tag
+Finalidade:Tornar as imagens felxiveis */
+
+
+img{max-width: 100%;}
+
+h1{
+ text-align: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ text-transform: uppercase;
+ border-bottom: solid 5px;
+ font-size: 50px;
+
+
+}
+
+h2{
+    color: darkblue;
+    text-shadow: black 2px 2px 1px,black -1px -1px 3px;
+    
+}
+
+/* Seletor CLASSE */
+
+.centralizar{text-align: center;}
+
+.sombra-texto{text-shadow: black 3px 3px 4px;}
+
+.canto-arredondado{border-radius: 10px;}
+
+.destaque{
+background-color: yellow;
+border:solid 1px;
+padding: 5px;
+
+
+
+
+}
+/* Selector DESCENDENTE */
+nav a{ /*REGRA INICIAL DO LINK*/
+
+    text-decoration: white;
+    color: black;
+    font-weight: bold;
+    background-color: aliceblue;
+
+    /* Primeiro valor:cima/baixo
+    Segundo valor:esquerda/direita */
+    padding: 15px 30px;
+
+
+    display: inline-block;
+    width: 33.33%;
+    
+}
+
+/* Regra de acionamento do link Pseudo-Classe:houver */
+
+nav a:hover {
+    background-color:darkblue;
+    color: yellow;
+}
+
+figure{
+    margin:0;
+    text-align: center;
+}
+
+figure img{
+    filter: grayscale(100%);
+    transition: 2s;
+}
+
+figure img:hover{filter: grayscale(0);}
